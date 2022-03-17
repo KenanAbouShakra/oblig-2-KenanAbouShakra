@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>oblig1.Kenan</title>
+    <h1>Bestilling av kinobiletter</h1>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="//code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="index.js" type="application/javascript"></script>
+</head>
+<body>
+<section class="container">
+        <div class="col-md-8" style="background-color:azure" class="col-sm" style="background-color:lightgray"
+             class="col-xs" style="background-color: floralwhite">
+    <table class="table table-striped">
+        <div class="form-group">
+            <tr>
+                <td>Velg film:</td>
+                <td></label><select id="velgFilm" type="text">
+                <option></option>
+                <option>Don't look up</option>
+                <option>The revenant</option>
+                <option>Verdens verste menneske</option>
+                <option>Parasitt</option>
+            </select></td>
+                <td><lable id="nullFilm" style="color: red"></lable></td>
+            </tr>
+            <tr>
+                <td>Antall: </td>
+                <td></label><input style="width: 50px" type="number" id="antall" min="1"></td>
+                <td><label style="color: red" id="nullAntall"></label></td>
+            </tr>
+        </div>
+        <div class="form-group"><tr>
+                    <td>Fornavn:</td>
+                    <td><input type="text" id="fornavn" ></td>
+                    <td><label id="nullFornavn" style="color: red"></label></td>
+        </tr>
+                <tr>
+                    <td>Etternavn:</td>
+                    <td><input type="text" id="etternavn" ></td>
+                    <td><lable id="nullEtternavn" style="color: red"></lable></td>
+                    </tr>
+                <tr>
+                    <td>Telefonnr:</td>
+                    <td><input type="tel" id="telefonNr" ></td>
+                    <td><label id="nullTelefonnr" style="color: red"></label></td>
+                    </tr>
+                <tr> <td>Epost:</td>
+                    <td><input type="email" id="epost"></td>
+                    <td><label id="nullEpost" style="color: red"></label></td>
+                </tr>
+        </div>
+    </table>
+        </div>
+</section>
+
+<div>
+    <button STYLE="border-radius: 10%; cursor: pointer" onclick="kjopbillett()"  class="btn btn-primary">Kjøp billett</button>
+</div>
+<br>
+    <form class="container"><div class="col-md-12" style="background-color: linen" class="col-sm" style="background-color:aliceblue"
+                                 class="col-xs" style="background-color: lightgoldenrodyellow">
+    <h2>Alle billetter</h2>
+<div>
+    <table id="output" class="table table-striped"></table>
+</div>
+    </div>
+    </form>
+            <div>
+            <button style="border-radius: 10%; cursor: pointer"  onclick="slett()" class="btn btn-danger">slett allle billettene</button>
+    </div>
+</section>
+</div>
+</body>
+</html>
